@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Lux4Worship</string>
+
+    <!--MENU DRAWER -->
+    <string name="menu_drawer_profile">Profile</string>
+    <string name="menu_drawer_date">My dates</string>
+    <string name="menu_drawer_logout">Logout</string>
+    <string name="firstname">firstname</string>
+    <string name="lastname">lastname</string>
+    <string name="description_image">Description image vide</string>
+    <string name="email">prenom.nom@realestatemanager.com</string>
+    <string name="nav_drawer_my_worship_team">La Source - Esch-sur-Alzette</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- MAIN ACTIVITY -->
+    <string name="toolbar_title_main_activity">Ma prochaine team</string>
+
+    <!-- BOTTOM NAVIGATION MENU -->
+    <string name="bottom_navigation_menu_team">Team</string>
+    <string name="bottom_navigation_menu_songs">Songs</string>
+    <string name="bottom_navigation_menu_notes">Notes</string>
+
+    <!-- ERROR -->
+    <string name="error_unknown_error">An unknown error occurred&#8230;</string>
+
+    <!-- PROFILE ACTIVITY -->
+    <string name="Profile_Activity_Title">Profile</string>
+    <string name="toolbar_title_login_activity">Your profile</string>
+    <string name="text_input_firstname">Firstname</string>
+    <string name="text_input_lastname">Lastname</string>
+    <string name="title_view_worship_team">My Worship Team</string>
+    <string name="text_view_worship_team">La Source - Esch-sur-Alzette</string>
+    <string name="button_update_account">Update the information</string>
+    <string name="update_confirmation">Updated information</string>
+    <string name="button_delete_account">Delete my account</string>
+    <string name="info_no_email_found">No worship team</string>
+    <string name="info_no_firstname_found">No first name</string>
+    <string name="popup_message_confirmation_delete_account">Are you sure you want to delete your account?</string>
+    <string name="popup_message_choice_yes">Yes</string>
+    <string name="popup_message_choice_no">No</string>
+    <string name="user_information_title">USER INFORMATIONS</string>
+
+    <string name="musical_information_title">INSTRUMENT(S)</string>
+
+
+    <!-- NOTIFICATION -->
+    <string name="notification_enable">Notifications</string>
+    <string name="notification_setting">PARAMETRES DE NOTIFICATION</string>
+
+</resources>

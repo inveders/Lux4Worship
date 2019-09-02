@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.inved.lux4worship.ProfileActivity">
+
+    <!-- Importation of the Toolbar -->
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_large_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- USER INFORMATION CONTAINER -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <!-- USER INFORMATION TITLE-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_information_title"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profile_activity_edit_text_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_input_lastname"
+                android:textSize="@dimen/default_text_size" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profile_activity_edit_text_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_input_firstname"
+                android:textSize="@dimen/default_text_size" />
+
+            <!-- WORSHIP TEAM INFORMATION -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_view_worship_team"
+                    android:textSize="@dimen/default_text_size"
+                    />
+
+                <TextView
+                    android:id="@+id/profile_activity_text_view_worship_team"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_margin"
+                    android:textSize="@dimen/default_text_size"
+                    android:text="@string/text_view_worship_team"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <!-- PROFILE IMAGE -->
+            <ImageView
+                android:id="@+id/profile_activity_imageview_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_anon_user_48dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- MUSICAL INFORMATION CONTAINER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+
+        android:layout_margin="@dimen/default_large_margin">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:background="@color/orangeColor"
+            >
+
+            <!-- MUSICAL INFORMATION TITLE-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="@string/musical_information_title"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/greenColor"
+            >
+
+            <!-- ADD IMAGE -->
+            <ImageView
+                android:id="@+id/profile_activity_imageview_add_instrument"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/profile_add_circle_primary_color_24dp"
+                android:contentDescription="@string/description_image"
+                tools:targetApi="donut" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- NOTIFICATION CONTAINER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/default_large_margin">
+
+        <!-- NOTIFICATION TITLE-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/notification_setting"
+            android:textStyle="bold" />
+
+        <!--SWITCH -->
+        <Switch
+            android:id="@+id/notification_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/blackColor"
+            android:text="@string/notification_enable"
+            tools:targetApi="ice_cream_sandwich" />
+
+    </LinearLayout>
+
+
+    <!-- BUTTON CONTAINER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <!-- BUTTON UPDATE USERNAME -->
+        <Button
+            android:id="@+id/profile_activity_button_update"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_large_margin"
+            android:layout_marginEnd="@dimen/default_large_margin"
+            android:background="@drawable/button_radius_primary_color"
+
+            android:text="@string/button_update_account"
+            android:textColor="#fff"
+            android:textSize="@dimen/default_text_size"
+            tools:targetApi="honeycomb" />
+
+
+        <!-- BUTTON DELETE ACCOUNT -->
+        <Button
+            android:id="@+id/profile_activity_button_delete"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_large_margin"
+            android:background="@drawable/button_radius_primary_color"
+            android:padding="@dimen/default_margin"
+            android:text="@string/button_delete_account"
+            android:textColor="#fff"
+            android:textSize="@dimen/default_text_size"
+            tools:targetApi="honeycomb" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

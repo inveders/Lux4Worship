@@ -81,8 +81,8 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     // Configure Toolbar
     private void configureToolBar(){
         this.toolbar = findViewById(R.id.activity_main_toolbar);
-        setSupportActionBar(toolbar);
-        setTitle(getString(R.string.toolbar_title_main_activity));
+//        setSupportActionBar(toolbar);
+       // setTitle(getString(R.string.toolbar_title_main_activity));
     }
 
     // Configure Drawer Layout
@@ -91,8 +91,8 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
-
     }
+
 
     // Configure NavigationView
     private void configureNavigationView(){

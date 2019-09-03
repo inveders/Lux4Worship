@@ -17,6 +17,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
 }
 
 dependencies {
@@ -26,7 +30,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-
+    implementation 'com.google.android.material:material:1.0.0'
 
     implementation 'com.jakewharton:butterknife:10.1.0'
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
@@ -36,7 +40,7 @@ dependencies {
 
     implementation 'androidx.fragment:fragment:1.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'android.support.v4.view.PagerAdapter'
+//    implementation 'android.support.v4.view.PagerAdapter'
     implementation 'androidx.viewpager:viewpager:1.0.0'
     implementation 'androidx.viewpager2:viewpager2:1.0.0-beta03'
 

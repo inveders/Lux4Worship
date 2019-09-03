@@ -31,7 +31,7 @@
             app:theme="@style/Toolbar.TitleText" />
 
         <!-- Viewpager for our fragments -->
-        <androidx.viewpager2.widget.ViewPager2
+        <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewpager_fragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -51,15 +51,6 @@
 
     </RelativeLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <!-- 2 | NavigationView -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/activity_main_nav_view"
@@ -68,7 +59,7 @@
         android:layout_gravity="start"
         android:background="@color/colorPrimary"
         android:fitsSystemWindows="true"
-        app:headerLayout="@layout/main_activity_nav_header"
+        app:headerLayout="@layout/nav_drawer_header"
         app:menu="@menu/menu_drawer">
 
         <LinearLayout

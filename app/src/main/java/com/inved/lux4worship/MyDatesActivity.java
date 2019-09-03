@@ -5,6 +5,6 @@ import com.inved.lux4worship.base.BaseActivity;
 public class MyDatesActivity extends BaseActivity {
     @Override
     public int getFragmentLayout() {
-        return 0;
+        return R.layout.activity_dates;
     }
 }

@@ -31,11 +31,12 @@
             app:theme="@style/Toolbar.TitleText" />
 
         <!-- Viewpager for our fragments -->
-        <androidx.viewpager.widget.ViewPager
+        <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewpager_fragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/activity_main_toolbar" />
+            android:layout_below="@+id/activity_main_toolbar"
+            android:layout_above="@id/activity_main_bottom_navigation"/>
 
         <!-- Bottom Navigation View -->
         <com.google.android.material.bottomnavigation.BottomNavigationView

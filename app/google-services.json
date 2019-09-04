@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "897325967301",
+    "firebase_url": "https://lux4worship.firebaseio.com",
+    "project_id": "lux4worship",
+    "storage_bucket": "lux4worship.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897325967301:android:335b465775041024",
+        "android_client_info": {
+          "package_name": "com.inved.lux4worship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "897325967301-eujtacktgo1bsgsr8iau6ovk4a0jhafp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inved.lux4worship",
+            "certificate_hash": "66c25197271f0d6b1a8db63daf78dc6a0307a3b7"
+          }
+        },
+        {
+          "client_id": "897325967301-sochkgjvfdjcidaj2n03355apmlgkeho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtxzFLpcgjQpOHz9OJ1hbxx9BsD5bdWfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "897325967301-sochkgjvfdjcidaj2n03355apmlgkeho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

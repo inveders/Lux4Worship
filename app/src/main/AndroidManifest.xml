@@ -21,6 +21,8 @@
 
         <activity android:name=".controller.activity.ProfileActivity" />
         <activity android:name=".controller.activity.MyDatesActivity" />
+        <activity android:name=".controller.activity.ConnexionActivity" />
+        <activity android:name=".controller.activity.FindMyChurchActivity" />
     </application>
 
 

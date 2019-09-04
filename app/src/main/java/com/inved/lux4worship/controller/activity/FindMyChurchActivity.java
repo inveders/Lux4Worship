@@ -49,6 +49,16 @@ public class FindMyChurchActivity extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Start appropriate activity
+        if (this.isCurrentUserLogged()) {
+            //    Log.d("Debago", "MainActivity : user is already log");
+
+            if (ManageChurchPreferences.getChurchId(this, ManageChurchPreferences.KEY_CHURCH_ID_DATA) != null) {
+                startMainActivity();
+            }
+
+        }
+
 
         Places.initialize(getApplicationContext(), getString(R.string.google_api_key));
         // Initialize the AutocompleteSupportFragment.
@@ -130,6 +140,12 @@ public class FindMyChurchActivity extends BaseActivity {
     private void startConnexionActivity() {
         Intent intent = new Intent(this, ConnexionActivity.class);
         Log.d("Debago", "FindMyChurch we go in connexionActivity");
+        startActivity(intent);
+    }
+
+    private void startMainActivity() {
+        Intent intent = new Intent(this, MainActivity.class);
+
         startActivity(intent);
     }
 }

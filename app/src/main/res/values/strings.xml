@@ -58,4 +58,14 @@
     <string name="find_my_church_question_text">Trouvez votre groupe</string>
     <string name="btn_valider">JE M\'INSCRIS</string>
 
+    <!-- CONNEXION ACTIVITY -->
+    <string name="loginFacebook">Sign in with Facebook</string>
+    <string name="loginGoogle">Sign in with Google</string>
+    <string name="connexion_activity_description">Join your worship team and be aware of all informations !</string>
+    <string name="error_authentication_canceled">Authentication cancelled&#8230;</string>
+    <string name="error_no_internet">No internet connection!</string>
+    <string name="connection_succeed">Authentication successful!</string>
+    <string name="button_login_text_logged">View profile</string>
+    <string name="button_login_text_not_logged">Login</string>
+
 </resources>

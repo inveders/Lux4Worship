@@ -1,4 +1,4 @@
-package com.inved.lux4worship;
+package com.inved.lux4worship.controller.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.inved.lux4worship.R;
 
 public class SongsFragment extends Fragment {
 

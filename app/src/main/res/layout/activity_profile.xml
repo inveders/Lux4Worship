@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context="com.inved.lux4worship.ProfileActivity">
+    tools:context="com.inved.lux4worship.controller.activity.ProfileActivity">
 
     <!-- Importation of the Toolbar -->
     <include
@@ -39,6 +39,7 @@
                 android:id="@+id/profile_activity_edit_text_lastname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/default_large_margin"
                 android:hint="@string/text_input_lastname"
                 android:textSize="@dimen/default_text_size" />
 
@@ -46,6 +47,7 @@
                 android:id="@+id/profile_activity_edit_text_firstname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/default_large_margin"
                 android:hint="@string/text_input_firstname"
                 android:textSize="@dimen/default_text_size" />
 
@@ -92,7 +94,7 @@
 
     </LinearLayout>
 
-    <!-- MUSICAL INFORMATION CONTAINER -->
+    <!-- MUSICAL INFORMATION CONTAINER TITLE -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -107,13 +109,15 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:orientation="vertical"
+
             >
 
             <!-- MUSICAL INFORMATION TITLE-->
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
+                android:layout_gravity="center_vertical"
                 android:text="@string/musical_information_title"
                 android:textStyle="bold" />
 
@@ -137,6 +141,20 @@
                 tools:targetApi="donut" />
 
         </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- MUSICAL INFORMATION CONTAINER ITEMS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:background="@color/orangeColor"
+        android:layout_margin="@dimen/default_large_margin">
+
+
+
 
     </LinearLayout>
 

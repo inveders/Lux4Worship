@@ -1,4 +1,4 @@
-package com.inved.lux4worship;
+package com.inved.lux4worship.controller.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,6 +18,10 @@ import androidx.fragment.app.FragmentTransaction;
 import com.firebase.ui.auth.AuthUI;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
+import com.inved.lux4worship.controller.fragment.NotesFragment;
+import com.inved.lux4worship.R;
+import com.inved.lux4worship.controller.fragment.SongsFragment;
+import com.inved.lux4worship.controller.fragment.TeamFragment;
 import com.inved.lux4worship.base.BaseActivity;
 
 import java.util.ArrayList;
@@ -69,7 +73,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
 
     private void initializationView() {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.content, TeamFragment.newInstance());
+        transaction.replace(R.id.activity_main_frame_layout, TeamFragment.newInstance());
         transaction.commit();
     }
 
@@ -152,15 +156,15 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
             switch (item.getItemId()) {
                 case R.id.bottom_navigation_menu_team:
                     selectedFragment = TeamFragment.newInstance();
-                    toolbar.setTitle(getString(R.string.bottom_navigation_menu_team));
+                //    toolbar.setTitle(getString(R.string.bottom_navigation_menu_team));
                     break;
                 case R.id.bottom_navigation_menu_songs:
                     selectedFragment = SongsFragment.newInstance();
-                    toolbar.setTitle(getString(R.string.bottom_navigation_menu_songs));
+                  //  toolbar.setTitle(getString(R.string.bottom_navigation_menu_songs));
                     break;
                 case R.id.bottom_navigation_menu_notes:
                     selectedFragment = NotesFragment.newInstance();
-                    toolbar.setTitle(getString(R.string.bottom_navigation_menu_notes));
+                 //   toolbar.setTitle(getString(R.string.bottom_navigation_menu_notes));
                     break;
             }
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();

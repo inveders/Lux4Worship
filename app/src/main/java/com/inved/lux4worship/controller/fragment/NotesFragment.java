@@ -1,4 +1,4 @@
-package com.inved.lux4worship;
+package com.inved.lux4worship.controller.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,18 +9,20 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class TeamFragment extends Fragment {
+import com.inved.lux4worship.R;
 
-    public static TeamFragment newInstance() {
-        TeamFragment fragment = new TeamFragment();
+public class NotesFragment extends Fragment {
+
+    public static NotesFragment newInstance() {
+        NotesFragment fragment = new NotesFragment();
         return fragment;
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_team, container, false);
-      //  unbinder = ButterKnife.bind(this, rootView);
+        View rootView = inflater.inflate(R.layout.fragment_notes, container, false);
+        //  unbinder = ButterKnife.bind(this, rootView);
         return rootView;
     }
 }
